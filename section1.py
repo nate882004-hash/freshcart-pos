@@ -1,3 +1,6 @@
+def check_membership(customer_id, members):
+    return members.get(customer_id)
+
 cart = []
 def scan_item():
     add_more = "yes"
@@ -13,3 +16,4 @@ def calculate_subtotal():
     for item in cart:
         subtotal += item('price')
     return subtotal
+    
